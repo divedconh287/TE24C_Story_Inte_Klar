@@ -11,18 +11,27 @@ while (HögerEllerVänster != "höger" && HögerEllerVänster != "vänster")
     if (HögerEllerVänster == "höger")
     { Console.WriteLine($"{namn} kollar åt höger, det sitter en spegel på väggen men det står också en låda i hörnet, vill du kolla in i spegeln eller kika i lådan?"); }
 
+    else if (HögerEllerVänster == "vänster")
+    { Console.WriteLine($"{namn} kollar åt vänster & ser en stor säng & en fåtölj, ska du lägga dig i sängen eller fåtöljen?"); }
+
+    else
+   { Console.WriteLine(">:("); }
+} 
+
     string SpegelnEllerLådan = "";
-    while (SpegelnEllerLådan != "spegeln" && SpegelnEllerLådan != "lådan")
-    {
-        SpegelnEllerLådan = Console.ReadLine().ToLower();
+while (SpegelnEllerLådan != "spegeln" && SpegelnEllerLådan != "lådan")
+{
+    SpegelnEllerLådan = Console.ReadLine().ToLower();
 
-        if (SpegelnEllerLådan == "spegeln")
-        { Console.WriteLine($"{namn} tittar in i spegeln som om de förväntar sig en komplimang, men spegeln säger ingenting."); }
+    if (SpegelnEllerLådan == "spegeln")
+    { Console.WriteLine($"{namn} tittar in i spegeln som om de förväntar sig en komplimang, men spegeln säger ingenting."); }
 
-        else if (SpegelnEllerLådan == "lådan")
-        { Console.WriteLine($"{namn} börjar gräva i lådan & hittar en nyckel, vill {namn} spara nyckeln?"); }
+    else if (SpegelnEllerLådan == "lådan")
+    { Console.WriteLine($"{namn} börjar gräva i lådan & hittar en nyckel, vill {namn} spara nyckeln?"); }
+    else
+    { Console.WriteLine("Spegeln eller lådan?"); } }
+
         string Nyckel = "";
-//hybjbhjhyj b 
         while (Nyckel != "ja" && Nyckel != "nej")
         {
             Nyckel = Console.ReadLine().ToLower();
@@ -36,14 +45,10 @@ while (HögerEllerVänster != "höger" && HögerEllerVänster != "vänster")
             else
             { Console.WriteLine("det är en ja eller nej fråga!"); }
         }
-        else
-        { Console.WriteLine("Spegeln eller lådan?"); }
-    }
-        else if (HögerEllerVänster == "vänster")
-    { Console.WriteLine($"{namn} kollar åt vänster & ser en stor säng & en fåtölj, ska du lägga dig i sängen eller fåtöljen?"); }
+    
+
 
     string SängEllerFåtölj = "";
-
     while (SängEllerFåtölj != "sängen" && SängEllerFåtölj != "fåtöljen")
     {
         SängEllerFåtölj = Console.ReadLine().ToLower();
@@ -57,13 +62,4 @@ while (HögerEllerVänster != "höger" && HögerEllerVänster != "vänster")
         else
         { Console.WriteLine("sängen eller fåtöljen?"); }
     }
-
-
-    else
-    { Console.WriteLine(">:("); }
-}
-
-
-    
-
 Console.ReadLine();
