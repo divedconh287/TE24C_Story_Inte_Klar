@@ -1,0 +1,27 @@
+//bool isAlive = 3 < 16;
+//bool isAlive = 3 > 16;
+//bool isAlive = 3 == 16;
+//bool isAlive = 3 != 16;
+// bool isAlive = 3 != 16 && 3 > 3;
+// Console.WriteLine(isAlive);
+
+    Console.WriteLine("Namn snälla");
+
+string name = Console.ReadLine().ToLower();
+
+if (name == "aaron")
+{
+    Console.WriteLine("Hej");
+}
+else if (name == "aron")
+
+{
+    Console.WriteLine(">:(");
+}
+
+else
+{
+    Console.WriteLine(":(");
+}
+
+Console.ReadLine();
