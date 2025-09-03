@@ -1,6 +1,6 @@
 ﻿string namn;
 Console.WriteLine("Du ska gå på ett jätte spännande äventyr, men först, vad heter du?");
-namn = Console.ReadLine();
+namn = Console.ReadLine().ToLower();
 Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
 
 string HögerEllerVänster = "";
@@ -15,7 +15,7 @@ while (HögerEllerVänster != "höger" && HögerEllerVänster != "vänster")
     { Console.WriteLine($"{namn} kollar åt vänster & ser en stor säng & en fåtölj, ska du lägga dig i sängen eller fåtöljen?"); }
 
     else
-   { Console.WriteLine(">:("); }
+    { Console.WriteLine("höger eller vänster?"); }
 } 
 
     string SpegelnEllerLådan = "";
