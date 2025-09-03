@@ -22,7 +22,7 @@ while (HögerEllerVänster != "höger" && HögerEllerVänster != "vänster")
         else if (SpegelnEllerLådan == "lådan")
         { Console.WriteLine($"{namn} börjar gräva i lådan & hittar en nyckel, vill {namn} spara nyckeln?"); }
         string Nyckel = "";
-
+//hybjbhjhyj b 
         while (Nyckel != "ja" && Nyckel != "nej")
         {
             Nyckel = Console.ReadLine().ToLower();
