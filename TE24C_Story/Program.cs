@@ -3,30 +3,30 @@ Console.WriteLine("Du ska gå på ett jätte spännande äventyr, men först, va
 namn = Console.ReadLine().ToLower();
 Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
 
-string HögerEllerVänster = "";
-while (HögerEllerVänster != "höger" && HögerEllerVänster != "vänster")
+string HogerEllerVanster = "";
+while (HogerEllerVanster != "höger" && HogerEllerVanster != "vänster")
 {
-    HögerEllerVänster = Console.ReadLine().ToLower();
+    HogerEllerVanster = Console.ReadLine().ToLower();
 
-    if (HögerEllerVänster == "höger")
+    if (HogerEllerVanster == "höger")
     { Console.WriteLine($"{namn} kollar åt höger, det sitter en spegel på väggen men det står också en låda i hörnet, vill du kolla in i spegeln eller kika i lådan?"); }
 
-    else if (HögerEllerVänster == "vänster")
+    else if (HogerEllerVanster == "vänster")
     { Console.WriteLine($"{namn} kollar åt vänster & ser en stor säng & en fåtölj, ska du lägga dig i sängen eller fåtöljen?"); }
 
     else
     { Console.WriteLine("höger eller vänster?"); }
 } 
 
-    string SpegelnEllerLådan = "";
-while (SpegelnEllerLådan != "spegeln" && SpegelnEllerLådan != "lådan")
+    string SpegelnEllerLadan = "";
+while (SpegelnEllerLadan != "spegeln" && SpegelnEllerLadan != "lådan")
 {
-    SpegelnEllerLådan = Console.ReadLine().ToLower();
+    SpegelnEllerLadan = Console.ReadLine().ToLower();
 
-    if (SpegelnEllerLådan == "spegeln")
+    if (SpegelnEllerLadan == "spegeln")
     { Console.WriteLine($"{namn} tittar in i spegeln som om de förväntar sig en komplimang, men spegeln säger ingenting."); }
 
-    else if (SpegelnEllerLådan == "lådan")
+    else if (SpegelnEllerLadan == "lådan")
     { Console.WriteLine($"{namn} börjar gräva i lådan & hittar en nyckel, vill {namn} spara nyckeln?"); }
     else
     { Console.WriteLine("Spegeln eller lådan?"); } }
@@ -48,15 +48,15 @@ while (SpegelnEllerLådan != "spegeln" && SpegelnEllerLådan != "lådan")
     
 
 
-    string SängEllerFåtölj = "";
-    while (SängEllerFåtölj != "sängen" && SängEllerFåtölj != "fåtöljen")
+    string SangEllerFatolj = "";
+    while (SangEllerFatolj != "sängen" && SangEllerFatolj != "fåtöljen")
     {
-        SängEllerFåtölj = Console.ReadLine().ToLower();
+        SangEllerFatolj = Console.ReadLine().ToLower();
 
-        if (SängEllerFåtölj == "sängen")
+        if (SangEllerFatolj == "sängen")
         { Console.WriteLine($"{namn} lägger sig i sängen & somnar."); }
 
-        else if (SängEllerFåtölj == "fåtöljen")
+        else if (SangEllerFatolj == "fåtöljen")
         { Console.WriteLine($"{namn} "); }
 
         else
