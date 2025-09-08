@@ -64,22 +64,51 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                     {
                         Console.WriteLine($"{namn} ställer sig upp & hämtar nyckeln.");
 
-                        Console.WriteLine("bla");
-                        string l = "";
-                        while (l != "n" && l != "m")
+                        Console.WriteLine("");
+                        string dörr = "";
+                        while (dörr != "använd" && dörr != "nej")
                         {
-                            l = Console.ReadLine().ToLower();
-                            if (l == "n")
-                            { Console.WriteLine($"{namn} bla"); }
-                            else if (l == "m")
-                            { Console.WriteLine($"{namn} bla"); }
+                            dörr = Console.ReadLine().ToLower();
+                            if (dörr == "använd")
+                            { Console.WriteLine($"{namn} stoppar in nyckeln i nyckelhålet och öppnar dörren"); }
+                            else if (dörr == "m")
+                            { }
                             else
-                            { Console.WriteLine("n eller m?"); }
+                            { Console.WriteLine("ska du låsa upp den eller inte?"); }
                         }
                     }
 
                     else if (Nyckel0 == "lämna")
-                    { Console.WriteLine($"{namn} "); }
+                    {
+                        Console.WriteLine($"{namn} lytter nyckeln ligga kvar.");
+                         Console.WriteLine("är du helt säker?");
+                        string saker = "";
+                        while (saker != "ja" && saker != "nej")
+                        {
+                            saker = Console.ReadLine().ToLower();
+                            if (saker == "ja")
+                            { }
+                            else if (saker == "nej")
+                            {
+                                Console.WriteLine($"{namn} ställer sig upp & hämtar nyckeln.");
+                                Console.ReadLine();
+                                Console.WriteLine($"just då märker {namn} att det finns en stor dörr på den tredje väggen.");
+                        string dörr = "";
+                        while (dörr != "använd" && dörr != "nej")
+                        {
+                            dörr = Console.ReadLine().ToLower();
+                            if (dörr == "använd")
+                            { Console.WriteLine($"{namn} stoppar in nyckeln i nyckelhålet och öppnar dörren"); }
+                            else if (dörr == "nej")
+                            { }
+                            else
+                            { Console.WriteLine("ska du låsa upp den eller inte?"); }
+                        }
+                            }
+                            else
+                            { Console.WriteLine("ja eller nej?"); }
+                        }   
+                    }
 
                     else
                     { Console.WriteLine("tänker du bara sitta där?"); } 
