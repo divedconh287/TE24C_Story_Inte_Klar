@@ -1,4 +1,4 @@
-﻿string namn;
+﻿ string namn;
 Console.WriteLine("Du ska gå på ett jätte spännande äventyr, men först, vad heter du?");
 namn = Console.ReadLine().ToLower();
 Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
@@ -28,13 +28,54 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                     Nyckel = Console.ReadLine().ToLower();
 
                     if (Nyckel == "ja")
-                    { Console.WriteLine($"{namn} tar nyckeln & lägger den i fickan, den är guld färgad & ganska dammig."); }
+                    {
+                        Console.WriteLine($"{namn} tar nyckeln & lägger den i fickan, den är guld färgad & ganska dammig.");
+                        string dorr = "";
+                        while (dorr != "öppna" && dorr != "nej")
+                        {
+                            dorr = Console.ReadLine().ToLower();
+                            if (dorr == "öppna")
+                            {
+                                Console.WriteLine($"{namn} ");
+                            }
+                            else if (dorr == "nej")
+                            {
+                                Console.WriteLine($"{namn} ");
+                            }
+
+                            else
+                            { Console.WriteLine("öppna snälla."); }
+                        }
+                    }
 
                     else if (Nyckel == "nej")
-                    { Console.WriteLine($"{namn} lämnar nyckeln ifred & reser sig upp."); }
+
+                    {
+                        Console.WriteLine("är du säker?");
+                        string saker = "";
+                        while (saker != "ja" && saker != "nej")
+                        {
+                            saker = Console.ReadLine().ToLower();
+                            if (saker == "ja")
+                            {
+                                Console.WriteLine($"{namn} ");
+                            }
+                            else if (saker == "nej")
+                            {
+                                Console.WriteLine($"{namn} ");
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("");
+                            }
+                        }
+                    }
 
                     else
-                    { Console.WriteLine("det är en ja eller nej fråga!"); }
+                    { 
+                        Console.WriteLine("det är en ja eller nej fråga!");
+                    }
                 }
             }
             else
@@ -65,13 +106,13 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                         Console.WriteLine($"{namn} ställer sig upp & hämtar nyckeln.");
 
                         Console.WriteLine("");
-                        string dörr = "";
-                        while (dörr != "använd" && dörr != "nej")
+                        string dorr = "";
+                        while (dorr != "använd" && dorr != "nej")
                         {
-                            dörr = Console.ReadLine().ToLower();
-                            if (dörr == "använd")
+                            dorr = Console.ReadLine().ToLower();
+                            if (dorr == "använd")
                             { Console.WriteLine($"{namn} stoppar in nyckeln i nyckelhålet och öppnar dörren"); }
-                            else if (dörr == "nej")
+                            else if (dorr == "nej")
                             { }
                             else
                             { Console.WriteLine("ska du låsa upp den eller inte?"); }
@@ -80,7 +121,7 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
 
                     else if (Nyckel0 == "lämna")
                     {
-                        Console.WriteLine($"{namn} lytter nyckeln ligga kvar.");
+                        Console.WriteLine($"{namn} låter nyckeln ligga kvar.");
                          Console.WriteLine("är du helt säker?");
                         string saker = "";
                         while (saker != "ja" && saker != "nej")
@@ -92,14 +133,14 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                             {
                                 Console.WriteLine($"{namn} ställer sig upp & hämtar nyckeln.");
                                 Console.ReadLine();
-                                Console.WriteLine($"just då märker {namn} att det finns en stor dörr på den tredje väggen.");
-                        string dörr = "";
-                        while (dörr != "använd" && dörr != "nej")
+                                Console.WriteLine($"just då märker {namn} att det finns en stor dorr på den tredje väggen.");
+                        string dorr = "";
+                        while (dorr != "använd" && dorr != "nej")
                         {
-                            dörr = Console.ReadLine().ToLower();
-                            if (dörr == "använd")
+                            dorr = Console.ReadLine().ToLower();
+                            if (dorr == "använd")
                             { Console.WriteLine($"{namn} stoppar in nyckeln i nyckelhålet och öppnar dörren"); }
-                            else if (dörr == "nej")
+                            else if (dorr == "nej")
                             { }
                             else
                             { Console.WriteLine("ska du låsa upp den eller inte?"); }
