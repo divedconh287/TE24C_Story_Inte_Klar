@@ -71,7 +71,7 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                             dörr = Console.ReadLine().ToLower();
                             if (dörr == "använd")
                             { Console.WriteLine($"{namn} stoppar in nyckeln i nyckelhålet och öppnar dörren"); }
-                            else if (dörr == "m")
+                            else if (dörr == "nej")
                             { }
                             else
                             { Console.WriteLine("ska du låsa upp den eller inte?"); }
