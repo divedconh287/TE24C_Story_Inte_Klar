@@ -2,43 +2,43 @@
 string namn;
 Console.WriteLine("Du ska gå på ett jätte spännande äventyr, men först, vad heter du?");
 namn = Console.ReadLine().ToLower();
-Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
+Console.WriteLine($"{namn} går in i ett rum.\ngå höger/gå vänster");
 
 // höger eller vänster 
     string HogerEllerVanster = "";
-    while (HogerEllerVanster != "höger" && HogerEllerVanster != "vänster")
+    while (HogerEllerVanster != "gå höger" && HogerEllerVanster != "gå vänster")
     {
     HogerEllerVanster = Console.ReadLine().ToLower();
 
     // du går höger
-    if (HogerEllerVanster == "höger")
+    if (HogerEllerVanster == "gå höger")
     {
-        Console.WriteLine($"{namn} kollar åt höger, det sitter en spegel på väggen men det står också en låda gjord av kartong i hörnet, vill du kolla in i spegeln eller kika i lådan?");
+        Console.WriteLine($"{namn} kollar åt höger, det sitter en spegel på väggen men det står också en låda gjord av kartong i hörnet.\nkolla i spegeln/kika i lådan?");
         string SpegelnEllerLadan = "";
-        while (SpegelnEllerLadan != "spegeln" && SpegelnEllerLadan != "lådan")
+        while (SpegelnEllerLadan != "kolla i spegeln" && SpegelnEllerLadan != "kika i lådan")
         {
             SpegelnEllerLadan = Console.ReadLine().ToLower();
             // du går höger-tittar i spegeln
-            if (SpegelnEllerLadan == "spegeln")
+            if (SpegelnEllerLadan == "kolla i spegeln")
             { Console.WriteLine($"{namn} tittar in i spegeln som om de förväntar sig en komplimang, men spegeln säger ingenting."); }
             // du går höger-tittar i lådan
-            else if (SpegelnEllerLadan == "lådan")
+            else if (SpegelnEllerLadan == "kika i lådan")
             {
-                Console.WriteLine($"{namn} börjar gräva i lådan & hittar en nyckel, vill {namn} spara nyckeln?");
+                Console.WriteLine($"{namn} börjar gräva i lådan & hittar en nyckel.\nta nyckeln/lämna den ifred");
                 string Nyckel = "";
-                while (Nyckel != "ja" && Nyckel != "nej")
+                while (Nyckel != "ta nyckeln" && Nyckel != "lämna den")
                 {
                     Nyckel = Console.ReadLine().ToLower();
                     // du går höger-tittar i lådan-tar nyckeln
-                    if (Nyckel == "ja")
+                    if (Nyckel == "ta nyckeln")
                     {
                         Console.WriteLine($"{namn} tar nyckeln & lägger den i fickan, den är guld färgad & ganska dammig.");
                         string dorr = "";
-                        while (dorr != "öppna" && dorr != "nej")
+                        while (dorr != "öppna dörren" && dorr != "nej")
                         {
                             dorr = Console.ReadLine().ToLower();
                             // du går höger-tittar i lådan-tar nyckeln-öppnar dörren
-                            if (dorr == "öppna")
+                            if (dorr == "öppna dörren")
                             {
                                 Console.WriteLine($"{namn} ");
                             }
@@ -53,7 +53,7 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                         }
                     }
                     // du går höger-tittar i lådan-tar inte nyckeln
-                    else if (Nyckel == "nej")
+                    else if (Nyckel == "lämna den ifred")
 
                     {
                         Console.WriteLine("är du säker?");
@@ -91,30 +91,30 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
         }
     }
     // du går vänster
-    else if (HogerEllerVanster == "vänster")
+    else if (HogerEllerVanster == "gå vänster")
     {
-        Console.WriteLine($"{namn} kollar åt vänster & ser en stor säng & en fåtölj, ska du lägga dig i sängen eller fåtöljen?");
+        Console.WriteLine($"{namn} kollar åt vänster & ser en stor säng & en fåtölj.\nligg i sängen/sitt i fåtöljen");
         string SangEllerFatolj = "";
-        while (SangEllerFatolj != "sängen" && SangEllerFatolj != "fåtöljen")
+        while (SangEllerFatolj != "ligg i sängen" && SangEllerFatolj != "sitt i fåtöljen")
         {
             SangEllerFatolj = Console.ReadLine().ToLower();
             // du går vänster-lägger dig i sängen
-            if (SangEllerFatolj == "sängen")
+            if (SangEllerFatolj == "ligg i sängen")
             { Console.WriteLine($"{namn} lägger sig i sängen & somnar."); }
             // du går vänster-sitter i fåtöljen
-            else if (SangEllerFatolj == "fåtöljen")
+            else if (SangEllerFatolj == "sitt i fåtöljen")
             {
-                Console.WriteLine($"{namn} sätter sig i fåtöljen & märker att det finns något som blänker genom handtaget av kartongen på andra sidan av rummet.");
+                Console.WriteLine($"{namn} sätter sig i fåtöljen & märker att det finns något som blänker genom handtaget av kartongen på andra sidan av rummet.\nundersök blänket/ignorera blänket");
                 string Nyckel0 = "";
-                while (Nyckel0 != "hämta" && Nyckel0 != "lämna")
+                while (Nyckel0 != "undersök blänket" && Nyckel0 != "ignorera blänket")
                 {
                     Nyckel0 = Console.ReadLine().ToLower();
                     // du går vänster-sitter i fåtöljen-hämta nyckeln
-                    if (Nyckel0 == "hämta")
+                    if (Nyckel0 == "undersök blänket")
                     {
                         Console.WriteLine($"{namn} ställer sig upp & hämtar nyckeln.");
 
-                        Console.WriteLine("");
+                        Console.WriteLine("dörr blabber");
                         string dorr = "";
                         while (dorr != "använd" && dorr != "nej")
                         {
@@ -131,7 +131,7 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
                         }
                     }
                     // du går vänster-sitter i fåtöljen-hämtar inte nyckel
-                    else if (Nyckel0 == "lämna")
+                    else if (Nyckel0 == "ignorera blänket")
                     {
                         Console.WriteLine($"{namn} låter nyckeln ligga kvar.");
                         Console.WriteLine("är du helt säker?");
@@ -180,6 +180,6 @@ Console.WriteLine($"{namn} går in i ett rum, höger eller vänster");
     }
     // höger eller vänster-skriver fel
     else
-    { Console.WriteLine("höger eller vänster?"); }
+    { Console.WriteLine("Vill du gå höger eller vänster?"); }
     }
     Console.ReadLine();
