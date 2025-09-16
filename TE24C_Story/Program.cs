@@ -32,24 +32,24 @@ Console.WriteLine($"{namn} går in i ett rum.\ngå höger/gå vänster");
                     // du går höger-tittar i lådan-tar nyckeln
                     if (Nyckel == "ta nyckeln")
                     {
-                        Console.WriteLine($"{namn} tar nyckeln & lägger den i fickan, den är guld färgad & ganska dammig.");
+                        Console.WriteLine($"{namn} tar nyckeln & lägger den i fickan, den är guld färgad & ganska dammig.\n{namn} kollar upp och märker att det finns en stor dörr med ett nyckelhål i.\nöppna dörren/öppna inte dörren");
                         string dorr = "";
-                        while (dorr != "öppna dörren" && dorr != "nej")
+                        while (dorr != "öppna dörren" && dorr != "öppna inte dörren")
                         {
                             dorr = Console.ReadLine().ToLower();
                             // du går höger-tittar i lådan-tar nyckeln-öppnar dörren
                             if (dorr == "öppna dörren")
                             {
-                                Console.WriteLine($"{namn} ");
+                                Console.WriteLine($"{namn} öppnar dörren");
                             }
                             // du går höger-tittar i lådan-tar nyckeln-öppnar inte dörren
-                            else if (dorr == "nej")
+                            else if (dorr == "öppna inte dörren")
                             {
-                                Console.WriteLine($"{namn} ");
+                                Console.WriteLine($"{namn} står bara där");
                             }
                             // du går höger-tittar i lådan-tar nyckeln-skriver fel
                             else
-                            { Console.WriteLine("öppna snälla."); }
+                            { Console.WriteLine("Snälla gör något."); }
                         }
                     }
                     // du går höger-tittar i lådan-tar inte nyckeln
@@ -61,27 +61,27 @@ Console.WriteLine($"{namn} går in i ett rum.\ngå höger/gå vänster");
                         while (saker != "ja" && saker != "nej")
                         {
                             saker = Console.ReadLine().ToLower();
-                            // du går höger-tittar i lådan-tar inte nyckeln-ändrar dig
+                            // du går höger-tittar i lådan-tar inte nyckeln-bestämd  
                             if (saker == "ja")
                             {
-                                Console.WriteLine($"{namn} ");
+                                Console.WriteLine($"hejdå");
                             }
-                            // du går höger-tittar i lådan-tar inte nyckeln-bestämd                           
+                            // du går höger-tittar i lådan-tar inte nyckeln-ändrar dig                         
                             else if (saker == "nej")
                             {
-                                Console.WriteLine($"{namn} ");
+                                Console.WriteLine($"{namn} sträcker sig ned igen och tar nyckeln.");
                             }
 
                             else
                             {
-                                Console.WriteLine("");
+                                Console.WriteLine("Det är en ja eller nej fråga!");
                             }
                         }
                     }
                     // du går höger-tittar i lådan-skriver fel
                     else
                     {
-                        Console.WriteLine("det är en ja eller nej fråga!");
+                        Console.WriteLine("Vill du ha den eller inte?");
                     }
                 }
                 // // du går höger-skriver fel
@@ -133,8 +133,8 @@ Console.WriteLine($"{namn} går in i ett rum.\ngå höger/gå vänster");
                     // du går vänster-sitter i fåtöljen-hämtar inte nyckel
                     else if (Nyckel0 == "ignorera blänket")
                     {
-                        Console.WriteLine($"{namn} låter nyckeln ligga kvar.");
-                        Console.WriteLine("är du helt säker?");
+                        Console.WriteLine($"{namn} ignorerar blänket.");
+                        Console.WriteLine("är du helt säker?\nja/nej");
                         string saker = "";
                         while (saker != "ja" && saker != "nej")
                         {
